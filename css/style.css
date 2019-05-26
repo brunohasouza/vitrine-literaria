@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #D3D3D3;
+	font-weight: bold;
+
+	
+}
+
+
+/*------------------------------Layout-------------------------------------*/
+
+
+#cabeçalho{
+
+	background-color: #f7b600;
+	height: 70px;
+
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+
+
+}
+
+
+
+#cabeçalho h1{
+	
+	position: relative;
+	display: inline-block;
+
+	width: 400px;
+	height: 40px;
+	padding: 15px 10px;
+	color: #4e4e4e;
+	font-size: 2.5em;
+}
+
+#pesquisa{
+	position: absolute;
+	
+	display: inline-block;
+
+	width: 600px;
+	height: 70px;
+	padding: 0px 10px;
+
+
+}
+
+#pesquisa input[type=search]{
+	width: 400px;
+	height: 40px;
+	margin: 15px 0px 0px 30px;
+	border-radius: 20px;
+	border: none;
+	padding: 10px;
+}
+
+#cabeçalho form{
+
+	
+	display: inline-block;
+
+}
+
+
+#menu{
+	
+	position: absolute;
+	display: inline-block;
+	top: -5px;
+	width: 280px;
+	height: 24px;
+	padding: 23px 10px;
+	left: 1040px;
+
+}
+
+#menu img{
+	width: 30px;
+
+	padding: 5px;
+	margin: 0px;
+}
+
+#cabeçalho #menu a:hover{
+	background-color: #f7b600;
+	color: #f7b600;
+	text-decoration: none;
+	padding: 0px;
+}
+
+#cabeçalho #menu a:link, #cabeçalho #menu a:visited{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px 20px;
+}
+
+h5{
+	display: inline;
+	position: relative;
+	top: -23px;
+}
+
+
+
+
+
+
+h2{
+	color: #f7b600;
+}
+
+h3{
+	color: white;
+	padding: 10px 5px;
+	text-align: center;
+	background-color: #f7b600;
+	margin: 5px;
+	margin-bottom: 0px;
+}
+
+
+.branco{
+	color: white;
+}
+
+a{
+
+	text-decoration: none;
+	
+
+}
+
+a:link, a:visited{
+	color: #f7b600;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+#cabeçalho a:link, #cabeçalho a:visited{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	font-weight: bold;
+	padding: 10px 8px;
+}
+
+#cabeçalho a:hover{
+	background-color: white;
+	color: #f7b600;
+	text-decoration: none;
+}
+
+
+
+.geral{
+
+	background-color: #DCDCDC;
+	position: relative;
+	top: 70px;
+
+	border-width: 0px 1px;
+	border-color: white;
+	border-style: solid;
+	width: 1000px;
+	margin: 0 auto;
+
+}
+
+
+
+
+#rodape{
+
+	text-align: center;
+	
+	background: #CCC;
+	position: relative;
+	width: 100%;
+	top: 70px;
+	padding: 15px 0px;
+
+	
+	
+}
+
+#rodape img{
+
+	width: 50px;
+}
+
+
+
+.geral #banner{
+	width: 100%;
+	
+}
+
+
+.meio{
+	height: 360px;
+	
+	margin-top: 20px;
+	width: 863px;
+	margin: 10px 50px;
+	padding: 20px 20px;
+}
+
+.anuncio{
+	display: inline-block;
+	height: 350px;
+	width: 200px;
+	
+	margin-right: 10px;
+	text-align: left;
+}
+
+.anuncio img{
+	width: 170px;
+	margin: 5px 15px 0px 15px;
+}
+
+.titulo{
+	
+	width: 170px;
+	height: 90px;
+	margin: 0px 15px;
+
+	color: black;
+	float: right;
+}
+
+.nome_autor{
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
