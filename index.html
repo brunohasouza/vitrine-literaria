@@ -1,162 +1,157 @@
-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vitrine Literária</title>
 
-<html>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="container">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <h1>Vitrine <spam class="branco">Literaria</spam></h1>
+                    </div>
+                    <div class="header__pesquisa">
+                        <form action="">	
+                            <div class="form-group">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option selected>Autor e Título</option>
+                                    <option>Autor</option>
+                                    <option>Título</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Pesquisar" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="submit" id="button-addon2">
+                                        <i class="material-icons">search</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header__usuario">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">account_circle</i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Login</a>
+                                <a class="dropdown-item" href="#">Cadastrar</a>
+                                <a class="dropdown-item" href="#">Recuperar Senha</a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="banner">
+                <div class="container">
+                    <div class="banner__imagem">
+                        <img src="./imagens/banner.png" class="img-fluid" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="maisVendidos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="section__titulo">
+                                <h1>Livros mais vendidos</h1>
+                                <a href="#" class="btn btn-outline-secondary">Ver Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="card">
+                                <img src="imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
+                                <div class="card-body">
+                                    <p>O Pequeno Príncipe</p>
+                                    <p class="text-muted">de Antoine de Saint-Exupéry</p>
+                                </div>
+                                <div class="strip-orange">
+                                    <span>Ver Anúncio</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="card">
+                                <img src="imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
+                                <div class="card-body">
+                                    <p>O Pequeno Príncipe</p>
+                                    <p class="text-muted">de Antoine de Saint-Exupéry</p>
+                                </div>
+                                <div class="strip-orange">
+                                    <span>Ver Anúncio</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="card">
+                                <img src="imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
+                                <div class="card-body">
+                                    <p>O Pequeno Príncipe</p>
+                                    <p class="text-muted">de Antoine de Saint-Exupéry</p>
+                                </div>
+                                <div class="strip-orange">
+                                    <span>Ver Anúncio</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="card">
+                                <img src="imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
+                                <div class="card-body">
+                                    <p>O Pequeno Príncipe</p>
+                                    <p class="text-muted">de Antoine de Saint-Exupéry</p>
+                                </div>
+                                <div class="strip-orange">
+                                    <span>Ver Anúncio</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="card">
+                                <img src="imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
+                                <div class="card-body">
+                                    <p>O Pequeno Príncipe</p>
+                                    <p class="text-muted">de Antoine de Saint-Exupéry</p>
+                                </div>
+                                <div class="strip-orange">
+                                    <span>Ver Anúncio</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-	<head>
-		<title>Vitrine Literaria</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer__container">
+                    <img src="./imagens/leoa.png" alt="">
+                    <address>Todos os direitos reservados</address>
+                </div>
+            </div>
+        </footer>
+    </main>
 
-	<body>
-
-
-							<div id="cabeçalho">
-								
-								
-									
-									<h1>Vitrine <spam class="branco">Literaria</spam></h1>
-
-
-									<div id="pesquisa">
-
-											<form>
-												
-												<input type="search">
-
-
-											</form>
-												<a href="anuncio.html">Pesquisar</a>
-
-									</div>
-
-									<div id="menu">
-
-										<a href="user.html">
-											<img src="imagens/user.png">
-											<h5>Fazer login</h5>
-										</a>
-
-										<a href="car.html">
-											<img src="imagens/car.png">
-										</a>
-
-										
-										
-
-									</div>
-
-								
-
-							</div>	
-
-				
-					
-
-
-							<div class="geral">
-
-								<img src="imagens/banner.png" id="banner">
-
-								<div class="meio">
-									
-									<a href="">
-										<div class="anuncio">
-
-											<img src="imagens/capa1.jpg">
-											
-											
-											<div class="titulo">
-												
-												O Pequeno Príncipe
-												<p class="nome_autor">por Antoine de Saint-Exupéry</p>
-
-											</div>	
-											
-
-										
-										</div>
-									</a>
-
-									<a href="">
-										<div class="anuncio">
-
-											<img src="imagens/capa2.jpg">
-
-
-											<div class="titulo">
-												
-												A incendiária
-												<p class="nome_autor">por Stephen King</p>
-
-											</div>	
-
-										
-										</div>
-									</a>
-
-									<a href="">
-										<div class="anuncio">
-
-											<img src="imagens/capa3.jpg">
-
-											
-											<div class="titulo">
-												
-												O estilo startup
-												<p class="nome_autor">por Carlos Szlak e Eric Ries</p>
-
-											</div>	
-
-										</div>
-									</a>
-
-									<a href="">
-										<div class="anuncio">
-
-											<img src="imagens/capa4.jpg">
-
-											
-											<div class="titulo">
-												
-												Mafalda 2019
-												<p class="nome_autor">por Quino</p>
-
-											</div>	
-
-										</div>
-									</a>
-								
-
-									
-
-								</div>
-
-									
-									
-
-							</div>
-
-
-
-							<div id="rodape">
-								<div>
-									
-									<img src="imagens/leoa.png">
-									<h5>Todos os direitos reservados</h5>
-
-								</div>
-								
-											
-								
-
-							</div>
-
-							
-	
-
-			
-
-	</body>
-
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
 </html>

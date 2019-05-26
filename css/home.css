@@ -1,0 +1,49 @@
+.maisVendidos {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.maisVendidos .card {
+    position: relative;
+}
+
+.maisVendidos .card .card-body  {
+    padding: .5rem .75rem;
+}
+
+.maisVendidos .card .card-body p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin: 0;
+    font-size: .75rem;
+}
+
+.maisVendidos .card .card-body p:first-child {
+    font-size: 1rem;
+    color: black;
+}
+
+.maisVendidos .card .strip-orange {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #ff5252;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: none;
+}
+
+.maisVendidos .card:hover .strip-orange {
+    display: block;
+}
+
+.maisVendidos .card:hover {
+    text-decoration: none;
+}
