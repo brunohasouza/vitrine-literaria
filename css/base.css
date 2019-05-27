@@ -22,6 +22,23 @@ header {
     width: 100%;
     z-index: 1000;
 }
+
+header.logado .header__usuarioLogado {
+    display: flex;
+}
+
+header.logado .header__usuario {
+    display: none;
+}
+
+header .header__usuario {
+    display: flex;
+}
+
+header .header__usuarioLogado {
+    display: none;
+}
+
 main {
     padding-top: 3.5rem;
 }
@@ -82,8 +99,8 @@ main {
 
 }
 
-.header__usuario {
-    display: flex;
+.header__usuario,
+.header__usuarioLogado {
     justify-content: flex-end;
 }
 
@@ -91,7 +108,7 @@ main {
     display: none;
 }
 
-.header__usuario .btn {
+.header__usuarioLogado .btn {
     margin-left: 1rem;
 }
 
