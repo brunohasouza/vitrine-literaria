@@ -43,9 +43,9 @@
                                 <i class="material-icons">account_circle</i>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Login</a>
-                                <a class="dropdown-item" href="#">Cadastrar</a>
-                                <a class="dropdown-item" href="#">Recuperar Senha</a>
+                                <button class="dropdown-item" data-toggle="modal" data-target="#loginModal">Login</button>
+                                <button class="dropdown-item" data-toggle="modal" data-target="#cadastroModal">Cadastro</button>
+                                <button class="dropdown-item" data-toggle="modal" data-target="#recuperarSenhaModal">Recuperar Senha</button>
                             </div>
                         </div>
                         <a href="#" class="btn btn-secondary">
@@ -74,67 +74,37 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row" id="livrosMaisVendidos">
+                    </div>
+                </div>
+            </div>
+            <div class="autoresMaisProcurados">
+                <div class="container">
                     <div class="row">
                         <div class="col">
-                            <a href="#" class="card">
-                                <img src="imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
-                                <div class="card-body">
-                                    <p>O Pequeno Príncipe</p>
-                                    <p class="text-muted">de Antoine de Saint-Exupéry</p>
-                                </div>
-                                <div class="strip-orange">
-                                    <span>Ver Anúncio</span>
-                                </div>
-                            </a>
+                            <div class="section__titulo">
+                                <h1>Autores Mais Procurados</h1>
+                                <a href="#" class="btn btn-outline-secondary">Ver Mais</a>
+                            </div>
                         </div>
+                    </div>
+                    <div class="row" id="listarMaioresAutores">
+
+                    </div>
+                </div>
+            </div>
+            <div class="titulosMaisProcurados">
+                <div class="container">
+                    <div class="row">
                         <div class="col">
-                            <a href="#" class="card">
-                                <img src="imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
-                                <div class="card-body">
-                                    <p>O Pequeno Príncipe</p>
-                                    <p class="text-muted">de Antoine de Saint-Exupéry</p>
-                                </div>
-                                <div class="strip-orange">
-                                    <span>Ver Anúncio</span>
-                                </div>
-                            </a>
+                            <div class="section__titulo">
+                                <h1>Livros Mais Procurados</h1>
+                                <a href="#" class="btn btn-outline-secondary">Ver Mais</a>
+                            </div>
                         </div>
-                        <div class="col">
-                            <a href="#" class="card">
-                                <img src="imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
-                                <div class="card-body">
-                                    <p>O Pequeno Príncipe</p>
-                                    <p class="text-muted">de Antoine de Saint-Exupéry</p>
-                                </div>
-                                <div class="strip-orange">
-                                    <span>Ver Anúncio</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="card">
-                                <img src="imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
-                                <div class="card-body">
-                                    <p>O Pequeno Príncipe</p>
-                                    <p class="text-muted">de Antoine de Saint-Exupéry</p>
-                                </div>
-                                <div class="strip-orange">
-                                    <span>Ver Anúncio</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#" class="card">
-                                <img src="imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
-                                <div class="card-body">
-                                    <p>O Pequeno Príncipe</p>
-                                    <p class="text-muted">de Antoine de Saint-Exupéry</p>
-                                </div>
-                                <div class="strip-orange">
-                                    <span>Ver Anúncio</span>
-                                </div>
-                            </a>
-                        </div>
+                    </div>
+                    <div class="row" id="listarTitulos">
+
                     </div>
                 </div>
             </div>
@@ -149,9 +119,200 @@
             </div>
         </footer>
     </main>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginInputEmail">E-mail</label>
+                            <input type="email" class="form-control" id="loginInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginInputSenha">Senha</label>
+                            <input type="password" class="form-control" id="loginInputSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                        </div>
+                        <div class="login-submit">
+                            <button type="submit" class="btn btn-lg btn-secondary">Entrar</button>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger" role="alert">Todos os campos são obrigatórios</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="recuperarSenhaModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recuperarSenhaEmail">E-mail</label>
+                            <input type="email" class="form-control" id="recuperarSenhaEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                        </div>
+                        <div class="login-submit">
+                            <button type="submit" class="btn btn-lg btn-secondary">Enviar Solicitação</button>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger" role="alert">Todos os campos são obrigatórios</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cadastre-se</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="cadastroInputNome">Nome</label>
+                            <input type="text" class="form-control" id="cadastroInputNome" placeholder="João da Silva">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputEmail">E-mail</label>
+                            <input type="email" class="form-control" id="cadastroInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputSenha">Senha</label>
+                            <input type="password" class="form-control" id="cadastroInputSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputRepetirSenha">Repetir Senha</label>
+                            <input type="password" class="form-control" id="cadastroInputRepetirSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputCEP">CEP</label>
+                            <input type="text" class="form-control" id="cadastroInputCEP" placeholder="53130-110">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputLogradouro">Logradouro</label>
+                            <input type="text" class="form-control" id="cadastroInputLogradouro" placeholder="Rua do Giriquiti">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputBairro">Bairro</label>
+                            <input type="text" class="form-control" id="cadastroInputBairro" placeholder="Boa Vista">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputCidade">Cidade</label>
+                            <input type="text" class="form-control" id="cadastroInputCidade" placeholder="Recife">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputCidade">Estado</label>
+                            <input type="text" class="form-control" id="cadastroInputCidade" placeholder="Pernambuco">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputNumero">Número</label>
+                            <input type="text" class="form-control" id="cadastroInputNumero" placeholder="172">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputComplemento">Complemento</label>
+                            <input type="text" class="form-control" id="cadastroInputComplemento" placeholder="Bloco A">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputReferência">Ponto de Referência</label>
+                            <input type="text" class="form-control" id="cadastroInputReferência" placeholder="Por trás do Shopping Boa Vista">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputTelefone">Telefone</label>
+                            <input type="text" class="form-control" id="cadastroInputTelefone" placeholder="(81) 98765-4321">
+                        </div>
+                        <div class="login-submit">
+                            <button type="submit" class="btn btn-lg btn-secondary">Enviar Solicitação</button>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger" role="alert">Todos os campos são obrigatórios</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script>
+        const maisVendidos = [{
+            titulo: 'O Pequeno Príncipe',
+            capa: 'imagens/capa1.jpg',
+            autor: 'Antoine de Saint-Exupéry'
+        },{
+            titulo: 'A Incendária',
+            capa: 'imagens/capa2.jpg',
+            autor: 'Stephen King'
+        },{
+            titulo: 'O Estilo Startup',
+            capa: 'imagens/capa3.jpg',
+            autor: 'Carlos Szlak e Eric Ries'
+        },{
+            titulo: 'Mafalda 2019',
+            capa: 'imagens/capa4.jpg',
+            autor: 'Quino'
+        },{
+            titulo: 'O Pequeno Príncipe',
+            capa: 'imagens/capa1.jpg',
+            autor: 'Antoine de Saint-Exupéry'
+        }]
+
+
+        const livroTemplate = (livros) => {
+            return livros.map(livro => {
+                return`
+                    <div class="col">
+                        <a href="#" class="card">
+                            <img src="${livro.capa}" class="card-img-top" alt="" srcset="">
+                            <div class="card-body">
+                                <p>${livro.titulo}</p>
+                                <p class="text-muted">de ${livro.autor}</p>
+                            </div>
+                            <div class="strip-orange">
+                                <span>Ver Anúncios</span>
+                            </div>
+                        </a>
+                    </div>
+                `
+            }).join('')
+        }
+
+        const autorTemplate = (livros) => {
+            return livros.map(livro => {
+                return`
+                    <div class="col">
+                        <a href="#" class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">${livro.autor}</h3>
+                            </div> 
+                            <div class="strip-orange">
+                                <span>Ver Anúncios</span>
+                            </div>
+                        </a>
+                    </div>
+                `
+            }).join('')
+        }
+
+
+        document.querySelector('#livrosMaisVendidos').innerHTML = livroTemplate(maisVendidos)
+        document.querySelector('#listarTitulos').innerHTML = livroTemplate(maisVendidos)
+        document.querySelector('#listarMaioresAutores').innerHTML = autorTemplate(maisVendidos)
+
+
+    </script>
 </body>
 </html>

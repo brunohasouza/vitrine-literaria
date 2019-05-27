@@ -133,3 +133,21 @@ footer {
     line-height: 2.25rem;
     margin: 0;
 }
+
+.modal .alert-danger {
+    margin: 0;
+    margin-top: 1rem;
+    display: none;
+}
+
+.modal .alert-danger.show {
+    display: block;
+}
+
+.modal .login-submit {
+    text-align: right;
+}
+
+.modal .login-submit .btn {
+    width: 100%;
+}

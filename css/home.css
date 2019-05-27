@@ -1,4 +1,5 @@
-.maisVendidos {
+.maisVendidos,
+.titulosMaisProcurados {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -7,11 +8,13 @@
     position: relative;
 }
 
-.maisVendidos .card .card-body  {
+.maisVendidos .card .card-body,
+.titulosMaisProcurados .card .card-body {
     padding: .5rem .75rem;
 }
 
-.maisVendidos .card .card-body p {
+.maisVendidos .card .card-body p,
+.titulosMaisProcurados .card .card-body p {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;  
@@ -25,7 +28,9 @@
     color: black;
 }
 
-.maisVendidos .card .strip-orange {
+.maisVendidos .card .strip-orange,
+.titulosMaisProcurados .card .strip-orange,
+.autoresMaisProcurados .card .strip-orange {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -40,10 +45,24 @@
     display: none;
 }
 
-.maisVendidos .card:hover .strip-orange {
+.maisVendidos .card:hover .strip-orange,
+.titulosMaisProcurados .card:hover .strip-orange,
+.autoresMaisProcurados .card:hover .strip-orange {
     display: block;
 }
 
-.maisVendidos .card:hover {
+.maisVendidos .card:hover,
+.titulosMaisProcurados .card:hover,
+.autoresMaisProcurados .card:hover {
     text-decoration: none;
+}
+
+.autoresMaisProcurados .card {
+    height: 17.25rem;
+}
+
+.autoresMaisProcurados .card .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
