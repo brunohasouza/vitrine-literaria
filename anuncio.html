@@ -1,229 +1,429 @@
-<!DOCTYPE html>
-
-<html>
-
-	<head>
-		<title>Vitrine Literaria - Anuncio</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/anuncio.css">
-	</head>
-
-	<body>
-
-
-							<div id="cabeçalho">
-								
-								
-									
-									<h1>Vitrine <spam class="branco">Literaria</spam></h1>
-
-
-									<div id="pesquisa">
-
-											<form>
-												
-												<input type="search">
-
-
-											</form>
-												<a href="anuncio.html">Pesquisar</a>
-
-									</div>
-
-									<div id="menu">
-
-										<a href="user.html">
-											<img src="imagens/user.png">
-											<h5>Fazer login</h5>
-										</a>
-
-										<a href="car.html">
-											<img src="imagens/car.png">
-										</a>
-
-										
-										
-
-									</div>
-
-								
-
-							</div>	
-
-				
-					
-
-
-							<div class="geral">
-
-								
-
-								<div class="meio">
-
-									<p class="titulo_pesquisa">O pequeno príncipe:</p>
-									<p >Segunda edição</p>
-									<p >2000</p>
-
-
-								</div>
-
-								<div id="container_anuncio">
-
-									
-
-									<div class="anuncio">
-
-										<div class="info_anuncio">
-
-											LOJA: Sebo Real<br>
-											LOCAL: R. José Bonifácio, 674 - Torre, 50710-001<br>
-											ESTADO: Seminovo
-											
-										</div>
-
-										<div class="avalia_info">
-
-											<img src="imagens/star.png">
-
-
-										</div>
-
-
-										<a href="anuncio2.html">
-											ADD AO CARRO
-										</a>		
-
-									</div>
-
-
-
-
-									<div class="anuncio">
-
-										<div class="info_anuncio">
-
-											LOJA: Sebo Real<br>
-											LOCAL: R. José Bonifácio, 674 - Torre, 50710-001<br>
-											ESTADO: Seminovo
-											
-										</div>
-
-										<div class="avalia_info">
-
-											<img src="imagens/star.png">
-
-
-										</div>
-
-
-										<a href="compra.html">
-											ADD AO CARRO
-										</a>		
-
-									</div>
-
-
-
-									<div class="anuncio">
-
-										<div class="info_anuncio">
-
-											LOJA: Sebo Real<br>
-											LOCAL: R. José Bonifácio, 674 - Torre, 50710-001<br>
-											ESTADO: Seminovo
-											
-										</div>
-
-										<div class="avalia_info">
-
-											<img src="imagens/star.png">
-
-
-										</div>
-
-
-										<a href="compra.html">
-											ADD AO CARRO
-										</a>		
-
-									</div>
-
-
-
-									<div class="anuncio">
-
-										<div class="info_anuncio">
-
-											LOJA: Sebo Real<br>
-											LOCAL: R. José Bonifácio, 674 - Torre, 50710-001<br>
-											ESTADO: Seminovo
-											
-										</div>
-
-										<div class="avalia_info">
-
-											<img src="imagens/star.png">
-
-
-										</div>
-
-
-										<a href="compra.html">
-											ADD AO CARRO
-										</a>		
-
-									</div>
-
-
-
-									<div class="anuncio">
-
-										<div class="info_anuncio">
-
-											LOJA: Sebo Real<br>
-											LOCAL: R. José Bonifácio, 674 - Torre, 50710-001<br>
-											ESTADO: Seminovo
-											
-										</div>
-
-										<div class="avalia_info">
-
-											<img src="imagens/star.png">
-
-
-										</div>
-
-
-										<a href="compra.html">
-											ADD AO CARRO
-										</a>		
-
-									</div>
-
-
-
-								</div>
-
-
-
-							<div id="rodape">
-								<div>
-									
-									<img src="imagens/leoa.png">
-									<h5>Todos os direitos reservados</h5>
-
-								</div>
-								
-											
-								
-
-							</div>
-
-							
-	
-
-			
-
-	</body>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vitrine Literária</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/anuncio.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="container">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <h1>Vitrine <spam class="branco">Literaria</spam></h1>
+                    </div>
+                    <div class="header__pesquisa">
+                        <form action="" id="pesquisarForm">	
+                            <div class="form-group">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="1" selected>Autor e Título</option>
+                                    <option value="2" >Autor</option>
+                                    <option value="3" >Título</option>
+                                </select> 
+                            </div>
+                            <div class="input-group">
+                                <input required type="text" id="pesquisarInputKeyword" class="form-control" placeholder="Pesquisar" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="submit" id="button-addon2">
+                                        <i class="material-icons">search</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header__usuario">
+                        <div class="dropdown dropdown_deslogado">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">account_circle</i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" data-toggle="modal" data-target="#loginModal">Login</button>
+                                <button class="dropdown-item" data-toggle="modal" data-target="#cadastroModal">Cadastro</button>
+                                <button class="dropdown-item" data-toggle="modal" data-target="#recuperarSenhaModal">Recuperar Senha</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__usuarioLogado">                        
+                        <div class="dropdown dropdown_logado">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Olá, Bruno!
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Meu Perfil</a>
+                                    <button class="dropdown-item" id="botaoLogout">Sair</button>
+                                </div>
+                            </div>
+                            <a href="carrinho.html" class="btn btn-secondary">
+                                <i class="material-icons">shopping_cart</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__titulo anuncio">
+                            <h1>O Pequeno Príncipe</h1>
+                            <p class="text-muted">Antoine de Saint-Exupéry</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">                            
+                            <img src="./imagens/capa1.jpg" class="card-img-top" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card anuncio__infos">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span>Editora: </span>
+                                    <span>Globo</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Páginas: </span>
+                                    <span>326</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Idioma: </span>
+                                    <span>Português</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Condição: </span>
+                                    <span>Usado</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Ano: </span>
+                                    <span>2018</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Localização: </span>
+                                    <span>PE - Recife</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Cadastrado em: </span>
+                                    <span>28/05/2019</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Sinopse: </span>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, explicabo. Consectetur quibusdam magnam tempore. At voluptate ratione exercitationem vel atque repellat, quisquam est tempora incidunt odio. Vel amet perspiciatis fuga voluptatibus maiores doloribus perferendis ea minus autem ratione vero asperiores neque labore, quisquam similique iusto quod beatae itaque exercitationem! Asperiores a harum illum sequi pariatur rem modi, recusandae accusamus perferendis?</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Descrição: </span>
+                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla officia fuga possimus distinctio maiores cumque id, quisquam quo accusamus non? Ducimus reiciendis quos harum accusantium consequuntur vero eveniet, voluptatum molestiae.m20</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="pesquisa.html" class="btn btn-light">Pesquisar por mais livros de <span>Antoine de Saint-Exupéry</span></a>
+                                <a href="pesquisa.html" class="btn btn-light">Pesquisar por outro anúncios com o título <span>O Pequeno Príncipe</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card anuncio__comprar">
+                            <div class="card-body">
+                                <div class="anuncio__preco">
+                                    <span>R$</span>
+                                    <span>30,00</span>
+                                    <p>em até 12x de 2,50</p>
+                                </div>
+                                <div class="anuncio__botao" id="btnComprar">
+                                    <button class="btn btn-info btn-lg">ADICIONAR AO CARRINHO</button>
+                                </div>
+                                <div class="anuncio__frete">
+                                    <form action="" id="freteForm">
+                                        <p>Calcule o frete:</p>
+                                        <input type="text" placeholder="CEP" class="form-control">
+                                        <button type="submit" class="btn btn-secondary">OK</button>
+                                    </form>
+                                    <div class="anuncio__frete--valor">
+                                        <div class="frete-prazo">
+                                            <span>Prazo:</span>
+                                            <span id="fretePrazo"></span>
+                                        </div>
+                                        <div class="frete-valor">
+                                            <span>Valor:</span>
+                                            <span id="freteValor"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card anuncio__vendedor">
+                            <div class="card-body">
+                                <p class="text-muted">Sobre o Vendedor</p>
+                                <h5 class="card-title">Bruno Henrique</h5>
+                                <p class="card-text">PE - Recife</p>
+                                <div class="anuncio__rating">
+                                    <div class="anuncio__nota">
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star_half</i>
+                                        <i class="material-icons">star_border</i>
+                                    </div>
+                                    <div class="anuncio__avaliacoes">
+                                        <span>764 comentários</span>
+                                    </div>
+                                </div>
+                                <div class="anuncio__botao">
+                                    <a href="" class="btn btn-light">Ver perfil completo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card anuncio__perguntas">
+                            <div class="card-body">
+                                <h5 class="card-title">Perguntas:</h5>
+                                <div class="anuncio__perguntaForm">
+                                    <form action="" id="formPergunta">
+                                        <textarea class="form-control" placeholder="Faça uma pergunta ao vendedor"></textarea>
+                                        <button class="btn btn-secondary">Enviar</button>
+                                    </form>
+                                </div>
+                                <div>
+                                    <div class="anuncio__pergunta">
+                                        <div class="anuncio__perguntaUsuario">
+                                            <div class="anuncio__imagemPerfil">
+                                                <i class="material-icons">account_circle</i>
+                                            </div>
+                                            <div class="anuncio__perguntaTexto">        
+                                                <span>Nome do Usuário</span>                                       
+                                                <span class="text-muted">28/05/2019</span>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam quod fugiat. Suscipit, sint. At velit ratione perferendis asperiores aliquam.</p>
+                                            </div>
+                                        </div>
+                                        <div class="anuncio__perguntaResposta">
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, nisi similique, dignissimos ipsa in, modi consequatur corporis maiores incidunt at recusandae tempore a corrupti assumenda ab placeat culpa sed et.</p>
+                                            <span>Resposta enviada dia 28/05/2019</span>
+                                        </div>
+                                    </div>
+                                    <div class="anuncio__pergunta">
+                                        <div class="anuncio__perguntaUsuario">
+                                            <div class="anuncio__imagemPerfil">
+                                                <i class="material-icons">account_circle</i>
+                                            </div>
+                                            <div class="anuncio__perguntaTexto">        
+                                                <span>Nome do Usuário</span>                                       
+                                                <span class="text-muted">28/05/2019</span>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam quod fugiat. Suscipit, sint. At velit ratione perferendis asperiores aliquam.</p>
+                                            </div>
+                                        </div>
+                                        <div class="anuncio__perguntaResposta">
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, nisi similique, dignissimos ipsa in, modi consequatur corporis maiores incidunt at recusandae tempore a corrupti assumenda ab placeat culpa sed et.</p>
+                                            <span>Resposta enviada dia 28/05/2019</span>
+                                        </div>
+                                    </div>
+                                    <div class="anuncio__pergunta">
+                                        <div class="anuncio__perguntaUsuario">
+                                            <div class="anuncio__imagemPerfil">
+                                                <i class="material-icons">account_circle</i>
+                                            </div>
+                                            <div class="anuncio__perguntaTexto">        
+                                                <span>Nome do Usuário</span>                                       
+                                                <span class="text-muted">28/05/2019</span>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam quod fugiat. Suscipit, sint. At velit ratione perferendis asperiores aliquam.</p>
+                                            </div>
+                                        </div>
+                                        <div class="anuncio__perguntaResposta">
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, nisi similique, dignissimos ipsa in, modi consequatur corporis maiores incidunt at recusandae tempore a corrupti assumenda ab placeat culpa sed et.</p>
+                                            <span>Resposta enviada dia 28/05/2019</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="anuncio__perguntaCarregarMais text-center">
+                                    <button class="btn btn-secondary">
+                                        Carregar Mais Perguntas
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer__container">
+                    <img src="./imagens/leoa.png" alt="">
+                    <address>Todos os direitos reservados</address>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginInputEmail">E-mail</label>
+                            <input required type="email" class="form-control" id="loginInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginInputSenha">Senha</label>
+                            <input required type="password" class="form-control" id="loginInputSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                        </div>
+                        <div class="login-submit">
+                            <button type="submit" class="btn btn-lg btn-secondary">Entrar</button>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger" role="alert">Todos os campos são obrigatórios</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="recuperarSenhaModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="recuperarSenhaForm">
+                        <div class="form-group">
+                            <label for="recuperarSenhaEmail">E-mail</label>
+                            <input required type="email" class="form-control" id="recuperarSenhaEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                        </div>
+                        <div class="login-submit">
+                            <button type="submit" class="btn btn-lg btn-secondary">Enviar Solicitação</button>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger" role="alert">Todos os campos são obrigatórios</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cadastre-se</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="cadastroForm">
+                        <div class="form-group">
+                            <label for="cadastroInputNome">Nome</label>
+                            <input required type="text" class="form-control" id="cadastroInputNome" placeholder="João da Silva">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputEmail">E-mail</label>
+                            <input required type="email" class="form-control" id="cadastroInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputSenha">Senha</label>
+                            <input required type="password" class="form-control" id="cadastroInputSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputRepetirSenha">Repetir Senha</label>
+                            <input required type="password" class="form-control" id="cadastroInputRepetirSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputCEP">CEP</label>
+                            <input required type="text" class="form-control" id="cadastroInputCEP" placeholder="53130-110">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputLogradouro">Logradouro</label>
+                            <input required type="text" class="form-control" id="cadastroInputLogradouro" placeholder="Rua do Giriquiti">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputBairro">Bairro</label>
+                            <input required type="text" class="form-control" id="cadastroInputBairro" placeholder="Boa Vista">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputCidade">Cidade</label>
+                            <input required type="text" class="form-control" id="cadastroInputCidade" placeholder="Recife">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputCidade">Estado</label>
+                            <input required type="text" class="form-control" id="cadastroInputCidade" placeholder="Pernambuco">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputNumero">Número</label>
+                            <input required type="text" class="form-control" id="cadastroInputNumero" placeholder="172">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputComplemento">Complemento</label>
+                            <input required type="text" class="form-control" id="cadastroInputComplemento" placeholder="Bloco A">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputReferência">Ponto de Referência</label>
+                            <input required type="text" class="form-control" id="cadastroInputReferência" placeholder="Por trás do Shopping Boa Vista">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputTelefone">Telefone</label>
+                            <input required type="text" class="form-control" id="cadastroInputTelefone" placeholder="(81) 98765-4321">
+                        </div>
+                        <div class="login-submit">
+                            <button type="submit" class="btn btn-lg btn-secondary">Enviar Solicitação</button>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger" role="alert">Todos os campos são obrigatórios</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/header.js"></script>
+
+    <script>
+        const logado = window.localStorage.getItem('vitrine')
+        const formPergunta = document.querySelector('#formPergunta')
+        const btnComprar = document.querySelector('#btnComprar')
+        const freteForm = document.querySelector('#freteForm')
+
+        if (logado === 'logado') {
+            formPergunta.innerHTML = `
+                <form action="">
+                    <textarea class="form-control" placeholder="Faça uma pergunta ao vendedor"></textarea>
+                    <button class="btn btn-secondary">Enviar</button>
+                </form>
+            `
+
+            btnComprar.innerHTML = `<button onclick="alert('Livro adicionado ao carrinho de compras')" class="btn btn-info btn-lg">ADICIONAR AO CARRINHO</button>`
+        } else {
+            formPergunta.innerHTML = `                
+                <form action="">
+                    <textarea class="form-control" placeholder="Faça login para falar com o vendedor" readonly></textarea>
+                </form>
+            `
+
+            btnComprar.innerHTML = `<button data-toggle="modal" data-target="#loginModal" class="btn btn-warning btn-lg">FAÇA LOGIN PARA COMPRAR</button>`
+        }
+
+        freteForm.addEventListener('submit', function(ev){
+            ev.preventDefault()
+            if(this.querySelector('input[type=text]').value) {
+                document.querySelector('#fretePrazo').innerHTML = '15 dias'
+                document.querySelector('#freteValor').innerHTML = 'R$14,63'
+            }
+        })
+        
+    </script>
+</body>
 </html>

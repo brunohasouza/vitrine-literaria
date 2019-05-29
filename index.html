@@ -22,9 +22,10 @@
                         <form action="" id="pesquisarForm">	
                             <div class="form-group">
                                 <select class="form-control" id="exampleFormControlSelect1">
-                                    <option value="1" selected>Autor e Título</option>
+                                    <option value="1" selected>Título</option>
                                     <option value="2" >Autor</option>
-                                    <option value="3" >Título</option>
+                                    <option value="3" >Editora</option>
+                                    <option value="4" >Vendedor</option>
                                 </select> 
                             </div>
                             <div class="input-group">
@@ -55,11 +56,11 @@
                                     Olá, Bruno!
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Meus Perfil</a>
+                                    <a class="dropdown-item" href="#">Meu Perfil</a>
                                     <button class="dropdown-item" id="botaoLogout">Sair</button>
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-secondary">
+                            <a href="carrinho.html" class="btn btn-secondary">
                                 <i class="material-icons">shopping_cart</i>
                             </a>
                         </div>
@@ -258,18 +259,8 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/header.js"></script>
     <script>
-        window.onload = function() {
-            const header = document.querySelector('header')
-            const logado = window.localStorage.getItem('vitrine')
-
-            if (logado === 'logado') {
-                header.classList.add('logado')
-            } else {
-                // header.classList.add('logado')
-                header.classList.remove('logado')
-            }
-        }
 
         const maisVendidos = [{
             titulo: 'O Pequeno Príncipe',
@@ -329,61 +320,10 @@
             }).join('')
         }
 
-        const submitForm = (form) => {
-            const inputList = Array.from(form.querySelectorAll('.form-control'))
-            const inputValues = inputList.filter(input => input.value)
-
-            const alert = document.querySelector(`#${form.id} + .alert-danger`)
-
-            if (inputValues.length === inputList.length) {
-                alert.classList.remove('show')
-                return true
-            } else {
-                alert.classList.add('show')
-                return false
-            }
-        }
-
 
         document.querySelector('#livrosMaisVendidos').innerHTML = livroTemplate(maisVendidos)
         document.querySelector('#listarTitulos').innerHTML = livroTemplate(maisVendidos)
         document.querySelector('#listarMaioresAutores').innerHTML = autorTemplate(maisVendidos)
-
-        document.querySelector('#loginForm').addEventListener('submit', function(ev){
-            ev.preventDefault()
-
-            if(submitForm(this)) {
-                window.localStorage.setItem('vitrine', 'logado')
-                window.location.reload()
-            }
-        })
-
-        document.querySelector('#cadastroForm').addEventListener('submit', function(ev){
-            ev.preventDefault()
-            submitForm(this)
-        })
-
-        document.querySelector('#recuperarSenhaForm').addEventListener('submit', function(ev){
-            ev.preventDefault()
-            submitForm(this)
-        })
-
-        document.querySelector('#pesquisarForm').addEventListener('submit', function(ev){
-            ev.preventDefault()
-
-            const keyword = this.querySelector('#pesquisarInputKeyword').value
-
-            if (keyword) {
-                window.location.href = 'pesquisa.html'
-            }
-        })
-
-        document.querySelector('#botaoLogout').addEventListener('click', (ev) =>{
-            ev.preventDefault();
-
-            window.localStorage.removeItem('vitrine')
-            window.location.reload()
-        })
 
     </script>
 </body>

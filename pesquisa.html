@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/pesquisa.css">
 </head>
 <body>
     <main>
@@ -54,11 +55,11 @@
                                     Olá, Bruno!
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Meus Perfil</a>
+                                    <a class="dropdown-item" href="#">Meu Perfil</a>
                                     <button class="dropdown-item" id="botaoLogout">Sair</button>
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-secondary">
+                            <a href="carrinho.html" class="btn btn-secondary">
                                 <i class="material-icons">shopping_cart</i>
                             </a>
                         </div>
@@ -66,6 +67,267 @@
                 </div>
             </div>
         </header>
+        <section>
+            <div class="container">
+                <div class="row pesquisa__filtros">
+                    <div class="col-3">
+                        <div class="section__titulo--pesquisa">
+                            <h1>Filtros</h1>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Condição do livro</div>
+                            <div class="card-body">
+                                <form action="">
+                                    <select class="custom-select">
+                                        <option value="1" selected>Todos</option>
+                                        <option value="3">Novo</option>
+                                        <option value="3">Seminovo</option>
+                                        <option value="2">Usado</option>
+                                        <option value="3">Muito Usado</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Idioma</div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="filtro__lista">
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="idioma" id="idiomaIngles">
+                                            <label for="idiomaIngles">Inglês</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="idioma" id="idiomaPortugues">
+                                            <label for="idiomaPortugues">Português</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="idioma" id="idiomaEspanhol">
+                                            <label for="idiomaEspanhol">Espanhol</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Localização</div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="filtro__lista">
+                                        <div class="filtro__elemento">
+                                            <label for="localizacaoEstado">Estado</label>
+                                            <select class="custom-select" id="localizacaoEstado">
+                                                <option value="1" selected>Todos</option>
+                                                <option value="1" selected>Pernambuco</option>
+                                                <option value="1" selected>Bahia</option>
+                                                <option value="1" selected>Rio de Janeiro</option>
+                                                <option value="1" selected>São Paulo</option>
+                                            </select>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <label for="localizacaoEstado">Cidade</label>
+                                            <select class="custom-select" id="localizacaoEstado">
+                                                <option value="1" selected>Todos</option>
+                                                <option value="1" selected>Recife</option>
+                                                <option value="1" selected>Salvador</option>
+                                                <option value="1" selected>Rio de Janeiro</option>
+                                                <option value="1" selected>São Paulo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Ano da Edição</div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="filtro__lista">
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="anoEdicao" id="anoEdicao1">
+                                            <label for="anoEdicao1">2018</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="anoEdicao" id="anoEdicao2">
+                                            <label for="anoEdicao2">2016</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="anoEdicao" id="anoEdicao3">
+                                            <label for="anoEdicao3">2003</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="anoEdicao" id="anoEdicao4">
+                                            <label for="anoEdicao4">1999</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="anoEdicao" id="anoEdicao5">
+                                            <label for="anoEdicao5">1995</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="anoEdicao" id="anoEdicao6">
+                                            <label for="anoEdicao6">1990</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Faixa de Preço</div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="filtro__lista">
+                                        <div class="filtro__elemento">
+                                            <input type="radio" name="faixaPreco" id="faixaPreco1">
+                                            <label for="faixaPreco1">Até R$10</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="radio" name="faixaPreco" id="faixaPreco2">
+                                            <label for="faixaPreco2">Até R$30</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="radio" name="faixaPreco" id="faixaPreco3">
+                                            <label for="faixaPreco3">Até R$50</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="radio" name="faixaPreco" id="faixaPreco4">
+                                            <label for="faixaPreco4">Até R$100</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="radio" name="faixaPreco" id="faixaPreco5">
+                                            <label for="faixaPreco5">Acima de R$100</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Categorias</div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="filtro__lista">
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="categoria" id="categoria1">
+                                            <label for="categoria1">Direito</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="categoria" id="categoria2">
+                                            <label for="categoria2">Psicologia</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="categoria" id="categoria3">
+                                            <label for="categoria3">Informática</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="categoria" id="categoria4">
+                                            <label for="categoria4">Ficção Científica</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="categoria" id="categoria5">
+                                            <label for="categoria5">Literatura Brasileira</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="categoria" id="categoria6">
+                                            <label for="categoria6">Auto-ajuda</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Editoras</div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="filtro__lista">
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="editora" id="editora1">
+                                            <label for="editora1">Vozes</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="editora" id="editora2">
+                                            <label for="editora2">Publifolha</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="editora" id="editora3">
+                                            <label for="editora3">Mestre Jou</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="editora" id="editora4">
+                                            <label for="editora4">Unica</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="editora" id="editora5">
+                                            <label for="editora5">Vetor</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="editora" id="editora6">
+                                            <label for="editora6">Record</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="editora" id="editora7">
+                                            <label for="editora7">FGV</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="editora" id="editora8">
+                                            <label for="editora8">Sextante</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="editora" id="editora9">
+                                            <label for="editora9">Globo</label>
+                                        </div>
+                                        <div class="filtro__elemento">
+                                            <input type="checkbox" name="editora" id="editora10">
+                                            <label for="editora10">Darkside</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">                                
+                        <div class="section__titulo--pesquisa">
+                            <h1>Encontramos 374 resultados para <strong>Senhor dos Anéis</strong></h1>
+                        </div>
+                        <div class="pesquisa__ordenacao">
+                            <div class="card">
+                                <div class="card-body">
+                                    <label for="selectOrdenacao">Ordenar por:</label>
+                                    <select class="custom-select" id="selectOrdenacao">
+                                        <option value="1" selected>Mais Recentes</option>
+                                        <option value="2">Ano de lançamento</option>
+                                        <option value="3">Preço (menor - maior)</option>
+                                        <option value="4">Preço (maior - menor)</option>
+                                        <option value="4">Melhor classificação</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pesquisa__resultados" id="listarResultados">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="pesquisa__paginacao">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer>
             <div class="container">
                 <div class="footer__container">
@@ -76,11 +338,232 @@
         </footer>
     </main>
 
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginInputEmail">E-mail</label>
+                            <input required type="email" class="form-control" id="loginInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginInputSenha">Senha</label>
+                            <input required type="password" class="form-control" id="loginInputSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                        </div>
+                        <div class="login-submit">
+                            <button type="submit" class="btn btn-lg btn-secondary">Entrar</button>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger" role="alert">Todos os campos são obrigatórios</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="recuperarSenhaModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="recuperarSenhaForm">
+                        <div class="form-group">
+                            <label for="recuperarSenhaEmail">E-mail</label>
+                            <input required type="email" class="form-control" id="recuperarSenhaEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                        </div>
+                        <div class="login-submit">
+                            <button type="submit" class="btn btn-lg btn-secondary">Enviar Solicitação</button>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger" role="alert">Todos os campos são obrigatórios</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cadastre-se</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="cadastroForm">
+                        <div class="form-group">
+                            <label for="cadastroInputNome">Nome</label>
+                            <input required type="text" class="form-control" id="cadastroInputNome" placeholder="João da Silva">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputEmail">E-mail</label>
+                            <input required type="email" class="form-control" id="cadastroInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputSenha">Senha</label>
+                            <input required type="password" class="form-control" id="cadastroInputSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputRepetirSenha">Repetir Senha</label>
+                            <input required type="password" class="form-control" id="cadastroInputRepetirSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputCEP">CEP</label>
+                            <input required type="text" class="form-control" id="cadastroInputCEP" placeholder="53130-110">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputLogradouro">Logradouro</label>
+                            <input required type="text" class="form-control" id="cadastroInputLogradouro" placeholder="Rua do Giriquiti">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputBairro">Bairro</label>
+                            <input required type="text" class="form-control" id="cadastroInputBairro" placeholder="Boa Vista">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputCidade">Cidade</label>
+                            <input required type="text" class="form-control" id="cadastroInputCidade" placeholder="Recife">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputCidade">Estado</label>
+                            <input required type="text" class="form-control" id="cadastroInputCidade" placeholder="Pernambuco">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputNumero">Número</label>
+                            <input required type="text" class="form-control" id="cadastroInputNumero" placeholder="172">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputComplemento">Complemento</label>
+                            <input required type="text" class="form-control" id="cadastroInputComplemento" placeholder="Bloco A">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputReferência">Ponto de Referência</label>
+                            <input required type="text" class="form-control" id="cadastroInputReferência" placeholder="Por trás do Shopping Boa Vista">
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastroInputTelefone">Telefone</label>
+                            <input required type="text" class="form-control" id="cadastroInputTelefone" placeholder="(81) 98765-4321">
+                        </div>
+                        <div class="login-submit">
+                            <button type="submit" class="btn btn-lg btn-secondary">Enviar Solicitação</button>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger" role="alert">Todos os campos são obrigatórios</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/header.js"></script>
 
     <script>
+        const livros = [{
+            capa: 'imagens/capa1.jpg',
+            titulo: 'O Pequeno Príncipe',
+            autor: 'Antoine de Saint-Exupéry',
+            editora: 'Globo',
+            ano: 2013,
+            idioma: 'Português',
+            condicao: 'Usado',
+            vendedor: 'Bruno Henrique',
+            estado: 'PE',
+            cidade: 'Recife',
+            preco: '30,00'
+        },{
+            capa: 'imagens/capa2.jpg',
+            titulo: 'A Incendiária',
+            autor: 'Stephen King',
+            editora: 'Darkside',
+            ano: 2018,
+            idioma: 'Português',
+            condicao: 'Seminovo',
+            vendedor: 'Luzonaldo Augusto',
+            estado: 'PE',
+            cidade: 'Recife',
+            preco: '50,00'
+        },{
+            capa: 'imagens/capa3.jpg',
+            titulo: 'O Estilo Startup',
+            autor: 'Carlos Szlak e Eric Ries',
+            editora: 'Leya',
+            ano: 2010,
+            idioma: 'Português',
+            condicao: 'Muito Usado',
+            vendedor: 'Lucas Araújo',
+            estado: 'PE',
+            cidade: 'Recife',
+            preco: '10,00'
+        },{
+            capa: 'imagens/capa4.jpg',
+            titulo: 'Mafalda 2019',
+            autor: 'Quino',
+            editora: 'Aleph',
+            ano: 2013,
+            idioma: 'Espanhol',
+            condicao: 'Novo',
+            vendedor: 'Arthur Felipe',
+            estado: 'PE',
+            cidade: 'Recife',
+            preco: '30,00'
+        }]
+
+        const livroTemplate = (livro) => {
+            return `
+                <div class="card mb-3">
+                    <div class="resultado__img">
+                        <img src="${livro.capa}" class="card-img" alt="...">
+                    </div>
+                    <div class="resultado__info">
+                        <div class="card-body">
+                            <h5 class="card-title">${livro.titulo}</h5>
+                            <p class="text-muted">${livro.autor}</p>
+                            <div class="resultado__infoColumns">
+                                <div class="resultado__infoBox">
+                                    <p class="card-text">Editora: <span>${livro.editora}</span></p>
+                                    <p class="card-text">Ano: <span>${livro.ano}</span></p>
+                                    <p class="card-text">Idioma: <span>${livro.idioma}</span></p>
+                                    <p class="card-text">Condição: <span>${livro.condicao}</span></p>  
+                                </div>
+                                <div class="resultado__infoBox">
+                                    <p class="card-text">Vendedor: <span>${livro.vendedor}</span></p>
+                                    <p class="card-text">${livro.estado} - <span>${livro.cidade}</span></p>
+                                    <p class="cart-text classificacao">
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star_half</i>
+                                        <i class="material-icons">star_border</i>
+                                    </p>
+                                    <p class="card-text"><span>794 avaliações</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                
+                    <div class="resultado__preco">
+                        <p class="pesquisa__preco">R$${livro.preco}</p>
+                        ${window.localStorage.getItem('vitrine') === 'logado' ? '<a class="btn btn-info" href="">Comprar</a>' : '<a  data-toggle="modal" data-target="#loginModal" class="btn btn-warning" href="">Faça Login para Comprar</a>'}
+                        <a href="anuncio.html" class="btn btn-link">Ver anúncio</a>
+                    </div>
+                </div>
+            `
+        }
+
+        let livrosLista = livros.slice()
+        livrosLista = livrosLista.concat(livrosLista.concat(livrosLista))
+
+        document.querySelector('#listarResultados').innerHTML = livrosLista.map(livro => livroTemplate(livro)).join('')
     </script>
 </body>
 </html>
