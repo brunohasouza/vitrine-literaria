@@ -1,5 +1,4 @@
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,11 +7,31 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/anuncio.css">
+
+    <style>
+        .formNovoAnuncio label {
+            width: 6rem;
+            margin: 0;
+        }
+
+        .formNovoAnuncio .card-text {
+            align-items: center;
+        }
+
+        .formNovoAnuncio .botao {
+            padding-top: 1rem;
+        }
+
+        .formNovoAnuncio .botao .btn {
+            width: 100%;
+        }
+
+    </style>
 </head>
 <body>
     <main>
-        <header>
+        <header class="logado">
             <div class="container">
                 <div class="header__container">
                     <div class="header__logo">
@@ -21,17 +40,16 @@
                             </a>
                     </div>
                     <div class="header__pesquisa">
-                        <form action="" id="pesquisarForm">	
+                        <form action="" id="pesquisarForm"> 
                             <div class="form-group">
                                 <select class="form-control" id="exampleFormControlSelect1">
-                                    <option value="1" selected>Título</option>
-                                    <option value="2" >Autor</option>
-                                    <option value="3" >Editora</option>
-                                    <option value="4" >Vendedor</option>
+                                    <option value="1" selected="">Autor e Título</option>
+                                    <option value="2">Autor</option>
+                                    <option value="3">Título</option>
                                 </select> 
                             </div>
                             <div class="input-group">
-                                <input required type="text" id="pesquisarInputKeyword" class="form-control" placeholder="Pesquisar" aria-describedby="button-addon2">
+                                <input required="" type="text" id="pesquisarInputKeyword" class="form-control" placeholder="Pesquisar" aria-describedby="button-addon2">
                                 <div class="input-group-append">
                                     <button class="btn btn-secondary" type="submit" id="button-addon2">
                                         <i class="material-icons">search</i>
@@ -58,7 +76,7 @@
                                     Olá, Bruno!
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="usuario.html">Meu Perfil</a>
+                                    <a class="dropdown-item" href="#">Meu Perfil</a>
                                     <a class="dropdown-item" href="new_anuncio.html">Criar Anúncio</a>
                                     <button class="dropdown-item" id="botaoLogout">Sair</button>
                                 </div>
@@ -69,61 +87,103 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </header>
         <section>
-            <div class="banner">
-                <div class="container">
-                    <div class="banner__imagem">
-                        <img src="./imagens/banner.png" class="img-fluid" alt="" srcset="">
-                    </div>
-                </div>
-            </div>
-            <div class="maisVendidos">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="section__titulo">
-                                <h1>Livros mais vendidos</h1>
-                                <a href="pequisa.html" class="btn btn-outline-secondary">Ver Mais</a>
-                            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__titulo anuncio">
+                            <h1>Novo Anuncio</h1>
                         </div>
                     </div>
-                    <div class="row" id="livrosMaisVendidos">
-                    </div>
-                </div>
-            </div>
-            <div class="autoresMaisProcurados">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="section__titulo">
-                                <h1>Autores Mais Procurados</h1>
-                                <a href="pequisa.html" class="btn btn-outline-secondary">Ver Mais</a>
-                            </div>
+                    <div class="col-2">
+                        <div class="card">                            
+                            <img src="./imagens/adicionar-imagem.jpeg" class="card-img-top" alt="" srcset="">
                         </div>
                     </div>
-                    <div class="row" id="listarMaioresAutores">
-
-                    </div>
-                </div>
-            </div>
-            <div class="titulosMaisProcurados">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="section__titulo">
-                                <h1>Livros Mais Procurados</h1>
-                                <a href="pequisa.html" class="btn btn-outline-secondary">Ver Mais</a>
-                            </div>
+                    <div class="col-6">
+                        <div class="card anuncio__infos">
+                            <div class="card-body">
+                                <form action="" class="formNovoAnuncio">
+                                    <div class="card-text">
+                                        <label for="">Título</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Autor</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Editora</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Páginas</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Idioma</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Condição</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="" selected>Novo</option>
+                                            <option value="" selected>Seminovo</option>
+                                            <option value="" selected>Usado</option>
+                                            <option value="" selected>Muito usado</option>
+                                        </select>
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Ano</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Estado</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="" selected>Pernambuco</option>
+                                            <option value="" selected>Bahia</option>
+                                            <option value="" selected>Rio de Janeiro</option>
+                                            <option value="" selected>São Paulo</option>
+                                        </select>
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Cidade</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="" selected>Recife</option>
+                                            <option value="" selected>Salvador</option>
+                                            <option value="" selected>Rio de Janeiro</option>
+                                            <option value="" selected>São Paulo</option>
+                                        </select>
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Sinopse</label>
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Descrição</label>
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                    <div class="card-text">
+                                        <label for="">Preço</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="botao">
+                                        <button onclick="submitNovoAnuncio(event)" type="submit" class="btn btn-info" >Criar Anúncio</button>
+                                    </div>
+                                </form>
+                            </div>                            
                         </div>
                     </div>
-                    <div class="row" id="listarTitulos">
-
+                    
+                    <div class="col-12">
+                        <div class="card anuncio__perguntas">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <footer>
             <div class="container">
@@ -134,24 +194,25 @@
             </div>
         </footer>
     </main>
+
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Login</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form id="loginForm">
                         <div class="form-group">
                             <label for="loginInputEmail">E-mail</label>
-                            <input required type="email" class="form-control" id="loginInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                            <input required="" type="email" class="form-control" id="loginInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
                         </div>
                         <div class="form-group">
                             <label for="loginInputSenha">Senha</label>
-                            <input required type="password" class="form-control" id="loginInputSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            <input required="" type="password" class="form-control" id="loginInputSenha" placeholder="●●●●●●●●●●">
                         </div>
                         <div class="login-submit">
                             <button type="submit" class="btn btn-lg btn-secondary">Entrar</button>
@@ -168,14 +229,14 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form id="recuperarSenhaForm">
                         <div class="form-group">
                             <label for="recuperarSenhaEmail">E-mail</label>
-                            <input required type="email" class="form-control" id="recuperarSenhaEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                            <input required="" type="email" class="form-control" id="recuperarSenhaEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
                         </div>
                         <div class="login-submit">
                             <button type="submit" class="btn btn-lg btn-secondary">Enviar Solicitação</button>
@@ -192,62 +253,62 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Cadastre-se</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form id="cadastroForm">
                         <div class="form-group">
                             <label for="cadastroInputNome">Nome</label>
-                            <input required type="text" class="form-control" id="cadastroInputNome" placeholder="João da Silva">
+                            <input required="" type="text" class="form-control" id="cadastroInputNome" placeholder="João da Silva">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputEmail">E-mail</label>
-                            <input required type="email" class="form-control" id="cadastroInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                            <input required="" type="email" class="form-control" id="cadastroInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputSenha">Senha</label>
-                            <input required type="password" class="form-control" id="cadastroInputSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            <input required="" type="password" class="form-control" id="cadastroInputSenha" placeholder="●●●●●●●●●●">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputRepetirSenha">Repetir Senha</label>
-                            <input required type="password" class="form-control" id="cadastroInputRepetirSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            <input required="" type="password" class="form-control" id="cadastroInputRepetirSenha" placeholder="●●●●●●●●●●">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputCEP">CEP</label>
-                            <input required type="text" class="form-control" id="cadastroInputCEP" placeholder="53130-110">
+                            <input required="" type="text" class="form-control" id="cadastroInputCEP" placeholder="53130-110">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputLogradouro">Logradouro</label>
-                            <input required type="text" class="form-control" id="cadastroInputLogradouro" placeholder="Rua do Giriquiti">
+                            <input required="" type="text" class="form-control" id="cadastroInputLogradouro" placeholder="Rua do Giriquiti">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputBairro">Bairro</label>
-                            <input required type="text" class="form-control" id="cadastroInputBairro" placeholder="Boa Vista">
+                            <input required="" type="text" class="form-control" id="cadastroInputBairro" placeholder="Boa Vista">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputCidade">Cidade</label>
-                            <input required type="text" class="form-control" id="cadastroInputCidade" placeholder="Recife">
+                            <input required="" type="text" class="form-control" id="cadastroInputCidade" placeholder="Recife">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputCidade">Estado</label>
-                            <input required type="text" class="form-control" id="cadastroInputCidade" placeholder="Pernambuco">
+                            <input required="" type="text" class="form-control" id="cadastroInputCidade" placeholder="Pernambuco">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputNumero">Número</label>
-                            <input required type="text" class="form-control" id="cadastroInputNumero" placeholder="172">
+                            <input required="" type="text" class="form-control" id="cadastroInputNumero" placeholder="172">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputComplemento">Complemento</label>
-                            <input required type="text" class="form-control" id="cadastroInputComplemento" placeholder="Bloco A">
+                            <input required="" type="text" class="form-control" id="cadastroInputComplemento" placeholder="Bloco A">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputReferência">Ponto de Referência</label>
-                            <input required type="text" class="form-control" id="cadastroInputReferência" placeholder="Por trás do Shopping Boa Vista">
+                            <input required="" type="text" class="form-control" id="cadastroInputReferência" placeholder="Por trás do Shopping Boa Vista">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputTelefone">Telefone</label>
-                            <input required type="text" class="form-control" id="cadastroInputTelefone" placeholder="(81) 98765-4321">
+                            <input required="" type="text" class="form-control" id="cadastroInputTelefone" placeholder="(81) 98765-4321">
                         </div>
                         <div class="login-submit">
                             <button type="submit" class="btn btn-lg btn-secondary">Enviar Solicitação</button>
@@ -263,71 +324,18 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/header.js"></script>
+
     <script>
+        const submitNovoAnuncio = function(ev) {
+            ev.preventDefault()
 
-        const maisVendidos = [{
-            titulo: 'O Pequeno Príncipe',
-            capa: 'imagens/capa1.jpg',
-            autor: 'Antoine de Saint-Exupéry'
-        },{
-            titulo: 'A Incendária',
-            capa: 'imagens/capa2.jpg',
-            autor: 'Stephen King'
-        },{
-            titulo: 'O Estilo Startup',
-            capa: 'imagens/capa3.jpg',
-            autor: 'Carlos Szlak e Eric Ries'
-        },{
-            titulo: 'Mafalda 2019',
-            capa: 'imagens/capa4.jpg',
-            autor: 'Quino'
-        },{
-            titulo: 'O Pequeno Príncipe',
-            capa: 'imagens/capa1.jpg',
-            autor: 'Antoine de Saint-Exupéry'
-        }]        
-
-        const livroTemplate = (livros) => {
-            return livros.map(livro => {
-                return`
-                    <div class="col">
-                        <a href="pesquisa.html" class="card">
-                            <img src="${livro.capa}" class="card-img-top" alt="" srcset="">
-                            <div class="card-body">
-                                <p>${livro.titulo}</p>
-                                <p class="text-muted">de ${livro.autor}</p>
-                            </div>
-                            <div class="strip-orange">
-                                <span>Ver Anúncios</span>
-                            </div>
-                        </a>
-                    </div>
-                `
-            }).join('')
+            if (confirm('Anúncio criado com sucesso')) {
+                window.location.href = 'index.html'
+            } else {
+                window.location.href = 'index.html'
+            }
         }
-
-        const autorTemplate = (livros) => {
-            return livros.map(livro => {
-                return`
-                    <div class="col">
-                        <a href="pesquisa.html" class="card text-white bg-secondary mb-3">
-                            <div class="card-body">
-                                <h3 class="card-title text-center">${livro.autor}</h3>
-                            </div> 
-                            <div class="strip-orange">
-                                <span>Ver Anúncios</span>
-                            </div>
-                        </a>
-                    </div>
-                `
-            }).join('')
-        }
-
-
-        document.querySelector('#livrosMaisVendidos').innerHTML = livroTemplate(maisVendidos)
-        document.querySelector('#listarTitulos').innerHTML = livroTemplate(maisVendidos)
-        document.querySelector('#listarMaioresAutores').innerHTML = autorTemplate(maisVendidos)
-
+        
     </script>
-</body>
-</html>
+
+</body></html>
