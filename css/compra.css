@@ -29,3 +29,42 @@
     padding-top: 10px;
     text-align: right;
 }
+
+.form__pagamento input {
+    margin-bottom: 1rem;
+}
+
+.form__pagamento .btn {
+    width: 15rem;
+}
+
+.card__pagamento {
+    margin-bottom: 2rem;
+}
+
+.boleto__botao {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.25rem;
+}
+
+.boleto__botao .btn {
+    width: 15rem;
+}
+
+.boleto__texto p:last-child {
+    font-weight: 400;
+    color: #666;
+    margin: 0;
+}
+
+.boleto__texto ul {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.boleto__texto li {
+    color: #666;
+    font-weight: 400;
+}
