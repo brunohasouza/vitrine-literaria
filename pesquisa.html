@@ -55,7 +55,7 @@
                                     Olá, Bruno!
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Meu Perfil</a>
+                                    <a class="dropdown-item" href="perfil.html">Meu Perfil</a>
                                     <button class="dropdown-item" id="botaoLogout">Sair</button>
                                 </div>
                             </div>
@@ -553,7 +553,7 @@
                     </div>                                
                     <div class="resultado__preco">
                         <p class="pesquisa__preco">R$${livro.preco}</p>
-                        ${window.localStorage.getItem('vitrine') === 'logado' ? '<a class="btn btn-info" href="">Comprar</a>' : '<a  data-toggle="modal" data-target="#loginModal" class="btn btn-warning" href="">Faça Login para Comprar</a>'}
+                        ${window.localStorage.getItem('vitrine') === 'logado' ? '<button class="btn btn-info" onclick="alert(`Livro adicionado ao carrinho de compras`)">Adicionar ao Carrinho</button>' : '<a  data-toggle="modal" data-target="#loginModal" class="btn btn-warning" href="">Faça Login para Comprar</a>'}
                         <a href="anuncio.html" class="btn btn-link">Ver anúncio</a>
                     </div>
                 </div>

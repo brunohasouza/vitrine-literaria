@@ -1,0 +1,31 @@
+.novo__endereco form:first-child {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.novo__endereco form:first-child span {
+    padding-right: 1rem;
+}
+
+.novo__endereco form:first-child input {
+    width: 10rem;
+    margin-right: 1rem;
+}
+
+.novo__endereco form:last-child input{
+    margin-bottom: 1.25rem;
+}
+
+.atual__endereco p {
+    margin: 0
+}
+
+.atual__endereco p:not(:first-child) {
+    margin-top: .75rem;
+}
+
+.atualBtn {
+    padding-top: 10px;
+    text-align: right;
+}

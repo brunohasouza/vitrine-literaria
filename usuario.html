@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,27 +7,27 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/carrinho.css">
+    <link rel="stylesheet" href="./css/anuncio.css">
 </head>
 <body>
     <main>
-        <header>
+        <header class="">
             <div class="container">
                 <div class="header__container">
                     <div class="header__logo">
                         <h1>Vitrine <spam class="branco">Literaria</spam></h1>
                     </div>
                     <div class="header__pesquisa">
-                        <form action="" id="pesquisarForm">	
-                            <div class="form-group" style="height: 100%;">
+                        <form action="" id="pesquisarForm"> 
+                            <div class="form-group">
                                 <select class="form-control" id="exampleFormControlSelect1">
-                                    <option value="1" selected>Autor e Título</option>
-                                    <option value="2" >Autor</option>
-                                    <option value="3" >Título</option>
+                                    <option value="1" selected="">Autor e Título</option>
+                                    <option value="2">Autor</option>
+                                    <option value="3">Título</option>
                                 </select> 
                             </div>
                             <div class="input-group">
-                                <input required type="text" id="pesquisarInputKeyword" class="form-control" placeholder="Pesquisar" aria-describedby="button-addon2">
+                                <input required="" type="text" id="pesquisarInputKeyword" class="form-control" placeholder="Pesquisar" aria-describedby="button-addon2">
                                 <div class="input-group-append">
                                     <button class="btn btn-secondary" type="submit" id="button-addon2">
                                         <i class="material-icons">search</i>
@@ -55,8 +53,8 @@
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Olá, Bruno!
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="perfil.html">Meu Perfil</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(16px, 38px, 0px);">
+                                    <a class="dropdown-item" href="#">Meu Perfil</a>
                                     <button class="dropdown-item" id="botaoLogout">Sair</button>
                                 </div>
                             </div>
@@ -66,42 +64,78 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </header>
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="section__titulo">
-                            <h1>Carrinho de Compras (2 itens)</h1>
+                        <div class="section__titulo anuncio">
+                            <h1>Editar usuario</h1>
+                            
                         </div>
                     </div>
-                    <div class="col-12" id="produtos">
+                    <div class="col-2">
+                        <div class="card">                            
+                            <img src="./imagens/usuario.jpg" class="card-img-top" alt="" srcset="">
+                        </div>
                     </div>
-                    <div class="col-12" id="vazio">
-                        <div class="card carrinho__produto">
-                            <div class="card-body text-center">
-                                <span>Seu carrinho está vazio</span>
+                    <div class="col-6">
+                        <div class="card anuncio__infos">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span>Nome: </span>
+                                    <span>Bruno Henrique</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>E-mail: </span>
+                                    <span>bruno@ifpe</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>CEP: </span>
+                                    <span>000.000.000-00</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Logradouro: </span>
+                                    <span>Rua Giriquiti</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Bairro: </span>
+                                    <span>Boa Vista</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Cidade: </span>
+                                    <span>Recife</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Estado: </span>
+                                    <span>Pernambuco</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Complemento: </span>
+                                    <span>Bloco A</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Posto de referência</span>
+                                    <span>Atras do shopping boa vista</span>
+                                </div>
+                                <div class="card-text">
+                                    <span>Telefone:</span>
+                                    <span>(00) 00000-0000</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-12" id="total">
-                        <div class="card carrinho__produto">
-                            <div class="card-body text-right">
-                                <span>Total do carrinho:</span>
-                                <span>R$109,23</span>
-                            </div>
-                        </div>
+                    <div class="col-4">
+                        
+                        
                     </div>
                     <div class="col-12">
-                        <div class="carrinho__botoes">
-                            <a href="pesquisa.html" class="btn btn-light">
-                                ESCOLHER MAIS LIVROS
-                            </a>
-                            <a href="compra.html" class="btn btn-info">
-                                FINALIZAR PEDIDO
-                            </a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -114,7 +148,6 @@
                 </div>
             </div>
         </footer>
-
     </main>
 
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -123,18 +156,18 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Login</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form id="loginForm">
                         <div class="form-group">
                             <label for="loginInputEmail">E-mail</label>
-                            <input required type="email" class="form-control" id="loginInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                            <input required="" type="email" class="form-control" id="loginInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
                         </div>
                         <div class="form-group">
                             <label for="loginInputSenha">Senha</label>
-                            <input required type="password" class="form-control" id="loginInputSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            <input required="" type="password" class="form-control" id="loginInputSenha" placeholder="●●●●●●●●●●">
                         </div>
                         <div class="login-submit">
                             <button type="submit" class="btn btn-lg btn-secondary">Entrar</button>
@@ -151,14 +184,14 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form id="recuperarSenhaForm">
                         <div class="form-group">
                             <label for="recuperarSenhaEmail">E-mail</label>
-                            <input required type="email" class="form-control" id="recuperarSenhaEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                            <input required="" type="email" class="form-control" id="recuperarSenhaEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
                         </div>
                         <div class="login-submit">
                             <button type="submit" class="btn btn-lg btn-secondary">Enviar Solicitação</button>
@@ -175,62 +208,62 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Cadastre-se</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form id="cadastroForm">
                         <div class="form-group">
                             <label for="cadastroInputNome">Nome</label>
-                            <input required type="text" class="form-control" id="cadastroInputNome" placeholder="João da Silva">
+                            <input required="" type="text" class="form-control" id="cadastroInputNome" placeholder="João da Silva">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputEmail">E-mail</label>
-                            <input required type="email" class="form-control" id="cadastroInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                            <input required="" type="email" class="form-control" id="cadastroInputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputSenha">Senha</label>
-                            <input required type="password" class="form-control" id="cadastroInputSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            <input required="" type="password" class="form-control" id="cadastroInputSenha" placeholder="●●●●●●●●●●">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputRepetirSenha">Repetir Senha</label>
-                            <input required type="password" class="form-control" id="cadastroInputRepetirSenha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            <input required="" type="password" class="form-control" id="cadastroInputRepetirSenha" placeholder="●●●●●●●●●●">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputCEP">CEP</label>
-                            <input required type="text" class="form-control" id="cadastroInputCEP" placeholder="53130-110">
+                            <input required="" type="text" class="form-control" id="cadastroInputCEP" placeholder="53130-110">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputLogradouro">Logradouro</label>
-                            <input required type="text" class="form-control" id="cadastroInputLogradouro" placeholder="Rua do Giriquiti">
+                            <input required="" type="text" class="form-control" id="cadastroInputLogradouro" placeholder="Rua do Giriquiti">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputBairro">Bairro</label>
-                            <input required type="text" class="form-control" id="cadastroInputBairro" placeholder="Boa Vista">
+                            <input required="" type="text" class="form-control" id="cadastroInputBairro" placeholder="Boa Vista">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputCidade">Cidade</label>
-                            <input required type="text" class="form-control" id="cadastroInputCidade" placeholder="Recife">
+                            <input required="" type="text" class="form-control" id="cadastroInputCidade" placeholder="Recife">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputCidade">Estado</label>
-                            <input required type="text" class="form-control" id="cadastroInputCidade" placeholder="Pernambuco">
+                            <input required="" type="text" class="form-control" id="cadastroInputCidade" placeholder="Pernambuco">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputNumero">Número</label>
-                            <input required type="text" class="form-control" id="cadastroInputNumero" placeholder="172">
+                            <input required="" type="text" class="form-control" id="cadastroInputNumero" placeholder="172">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputComplemento">Complemento</label>
-                            <input required type="text" class="form-control" id="cadastroInputComplemento" placeholder="Bloco A">
+                            <input required="" type="text" class="form-control" id="cadastroInputComplemento" placeholder="Bloco A">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputReferência">Ponto de Referência</label>
-                            <input required type="text" class="form-control" id="cadastroInputReferência" placeholder="Por trás do Shopping Boa Vista">
+                            <input required="" type="text" class="form-control" id="cadastroInputReferência" placeholder="Por trás do Shopping Boa Vista">
                         </div>
                         <div class="form-group">
                             <label for="cadastroInputTelefone">Telefone</label>
-                            <input required type="text" class="form-control" id="cadastroInputTelefone" placeholder="(81) 98765-4321">
+                            <input required="" type="text" class="form-control" id="cadastroInputTelefone" placeholder="(81) 98765-4321">
                         </div>
                         <div class="login-submit">
                             <button type="submit" class="btn btn-lg btn-secondary">Enviar Solicitação</button>
@@ -248,103 +281,38 @@
     <script src="./js/header.js"></script>
 
     <script>
-        let removidos = 0;
-        const livros = [{
-            vendedor: 'Bruno Henrique',
-            cidade: 'Recife',
-            estado: 'PE',
-            titulo: 'O Pequeno Príncipe',
-            autor: 'Antoine de Saint-Exupéry',
-            ano: 2013,
-            idioma: 'Português',
-            preco: '30,00',
-            capa: 'imagens/capa1.jpg',
-            id: 'produto1'
-        },{
-            vendedor: 'Luzonaldo Augusto',
-            cidade: 'Recife',
-            estado: 'PE',
-            titulo: 'A Incendiária',
-            autor: 'Stephen King',
-            ano: 2018,
-            idioma: 'Português',
-            preco: '50,00',
-            capa: 'imagens/capa2.jpg',
-            id: 'produto2'
-        }]
+        const logado = window.localStorage.getItem('vitrine')
+        const formPergunta = document.querySelector('#formPergunta')
+        const btnComprar = document.querySelector('#btnComprar')
+        const freteForm = document.querySelector('#freteForm')
 
-        const templateLivro = (livro) => {
-            return `                
-            <div class="card carrinho__produto" id="${livro.id}">
-                <div class="card-header">
-                    <span><strong>${livro.vendedor} - </strong>${livro.cidade}/${livro.estado}</span>
-                </div>
-                <div class="card-body">
-                    <div class="carrinho__body">
-                        <div class="carrinho__produto--imagem">
-                            <img src="${livro.capa}" alt="" srcset="">
-                        </div>
-                        <div class="carrinho__produto--infos">
-                            <div class="carrinho__produto--info">
-                                <p>${livro.titulo}</p>
-                                <p class="text-muted">${livro.autor}</p>
-                                <p>Ano: <span>${livro.ano}</span></p>
-                                <p>Idioma: <span>${livro.idioma}</span></p>
-                            </div>
-                            <div class="carrinho__produto--info">
-                                <div>
-                                    <p>R$${livro.preco}</p>
-                                </div>
-                                <div>
-                                    <button class="btn btn-outline-danger" onclick="deleteLivro(event)">
-                                        <i class="material-icons">delete</i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <div class="carrinho__footer">
-                        <form action="" onsubmit="submitFrete(event)">
-                            <span>Calcular frete:</span>
-                            <input type="text" class="form-control" placeholder="CEP">
-                            <button class="btn btn-secondary">OK</button>
-                        </form>
-                        <div>
-                            <span id="fretePrazo">Prazo: 15 dias</span>
-                            <span> | </span>
-                            <span id="freteValor">Valor: R$14,63</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        if (logado === 'logado') {
+            formPergunta.innerHTML = `
+                <form action="">
+                    <textarea class="form-control" placeholder="Faça uma pergunta ao vendedor"></textarea>
+                    <button class="btn btn-secondary">Enviar</button>
+                </form>
             `
+
+            btnComprar.innerHTML = `<button onclick="alert('Livro adicionado ao carrinho de compras')" class="btn btn-info btn-lg">ADICIONAR AO CARRINHO</button>`
+        } else {
+            formPergunta.innerHTML = `                
+                <form action="">
+                    <textarea class="form-control" placeholder="Faça login para falar com o vendedor" readonly></textarea>
+                </form>
+            `
+
+            btnComprar.innerHTML = `<button data-toggle="modal" data-target="#loginModal" class="btn btn-warning btn-lg">FAÇA LOGIN PARA COMPRAR</button>`
         }
 
-        const deleteLivro = function(ev) {
-            const element = ev.target.closest('.carrinho__produto')
-            element.style.display = 'none'
-            removidos++
-
-            if (removidos === 2) {
-                console.log('entrou')
-                document.querySelector('#vazio').style.display = 'block'
-                document.querySelector('#total').style.display = 'none';
-                document.querySelector('.btn-info').style.display = 'none'
-            }
-        }
-
-        const submitFrete = function(ev) {
+        freteForm.addEventListener('submit', function(ev){
             ev.preventDefault()
-            const element = ev.target.closest('.carrinho__produto')
-            const frete = element.querySelector('.carrinho__footer > div')
-
-            frete.style.display = 'block'
-        }
-
-        document.querySelector('#produtos').innerHTML = livros.map(livro => templateLivro(livro)).join('')
+            if(this.querySelector('input[type=text]').value) {
+                document.querySelector('#fretePrazo').innerHTML = '15 dias'
+                document.querySelector('#freteValor').innerHTML = 'R$14,63'
+            }
+        })
+        
     </script>
 
-</body>
-</html>
+</body></html>
