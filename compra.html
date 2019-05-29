@@ -178,7 +178,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card">
+                        <div class="card card__pagamento">
                             <div class="card-body">
                                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                     <li class="nav-item">
@@ -190,7 +190,7 @@
                                 </ul>
                                 <div class="tab-content" id="pills-tabContent">
                                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                        <form action="">
+                                        <form action="" class="form__pagamento">
                                             <div class="row">
                                                 <div class="col-6">
                                                     <label for="">Número do Cartão</label>
@@ -234,14 +234,14 @@
                                                     <input class="form-control" type="text" placeholder="dd/mm/aaaa">
                                                 </div>
                                                 <div class="col-12 text-right">
-                                                    <button class="btn btn-info">Finalizar Compra</button>
+                                                    <button class="btn btn-info" onclick="finalizarCompra(event)">Finalizar Compra</button>
                                                 </div>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                         <div class="boleto__botao text-center">
-                                            <button class="btn btn-info">
+                                            <button class="btn btn-info" onclick="finalizarCompra(event)">
                                                 Finalizar Compra
                                             </button>
                                         </div>
@@ -471,6 +471,16 @@
         }
 
         document.querySelector('#produtos').innerHTML = livros.map(livro => templateLivro(livro)).join('')
+
+        const finalizarCompra = (ev) => {
+            ev.preventDefault()
+
+            if (confirm('Compra finalizada com sucesso')) {
+                window.location.href ='index.html'
+            } else {
+                window.location.href='index.html'
+            }
+        }
     </script>
 </body>
 </html>
