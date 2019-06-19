@@ -174,3 +174,11 @@ footer {
 .modal .login-submit .btn {
     width: 100%;
 }
+
+.cardPaddingBottom {
+    padding-bottom: .25rem;
+}
+
+textarea {
+    resize: none !important;
+}

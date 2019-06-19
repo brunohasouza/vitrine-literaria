@@ -68,3 +68,46 @@
     color: #666;
     font-weight: 400;
 }
+
+.rating {
+    /* display: inline-block; */
+    width: max-content;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > label { 
+  color: #ddd; 
+  margin: 0;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+
+.compraFinalizada {
+    text-align: center;
+}
+
+.compraFinalizada i {
+    color: limegreen;
+    margin-bottom: 1rem;
+    font-size: 3rem;    
+}

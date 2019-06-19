@@ -16,9 +16,7 @@
                 <div class="header__container">
                     <div class="header__logo">
                         <a href="index.html">
-                                <a href="index.html">
-                                    <h1>Vitrine <spam class="branco">Literaria</spam></h1>
-                                </a>
+                            <h1>Vitrine <spam class="branco">Literaria</spam></h1>
                         </a>
                     </div>
                     <div class="header__pesquisa">
@@ -58,7 +56,7 @@
                                     Olá, Bruno!
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(16px, 38px, 0px);">
-                                    <a class="dropdown-item" href="#">Meu Perfil</a>
+                                    <a class="dropdown-item" href="usuario.html">Meu Perfil</a>
                                     <a class="dropdown-item" href="new_anuncio.html">Criar Anúncio</a>
                                     <button class="dropdown-item" id="botaoLogout">Sair</button>
                                 </div>
@@ -73,74 +71,186 @@
         </header>
         <section>
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="section__titulo anuncio">
-                            <h1>Editar usuario</h1>
-                            
+                            <h1>Perfil de Usuário</h1>                            
                         </div>
                     </div>
-                    <div class="col-2">
+                    <!-- <div class="col-2">
                         <div class="card">                            
                             <img src="./imagens/adicionar-imagem.jpeg" class="card-img-top" alt="" srcset="">
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card anuncio__infos">
-                            <div class="card-body">
-                                <div class="card-text">
-                                    <span>Nome: </span>
-                                    <span>Bruno Henrique</span>
-                                </div>
-                                <div class="card-text">
-                                    <span>E-mail: </span>
-                                    <span>bruno@ifpe</span>
-                                </div>
-                                <div class="card-text">
-                                    <span>CEP: </span>
-                                    <span>000.000.000-00</span>
-                                </div>
-                                <div class="card-text">
-                                    <span>Logradouro: </span>
-                                    <span>Rua Giriquiti</span>
-                                </div>
-                                <div class="card-text">
-                                    <span>Bairro: </span>
-                                    <span>Boa Vista</span>
-                                </div>
-                                <div class="card-text">
-                                    <span>Cidade: </span>
-                                    <span>Recife</span>
-                                </div>
-                                <div class="card-text">
-                                    <span>Estado: </span>
-                                    <span>Pernambuco</span>
-                                </div>
-                                <div class="card-text">
-                                    <span>Complemento: </span>
-                                    <span>Bloco A</span>
-                                </div>
-                                <div class="card-text">
-                                    <span>Posto de referência</span>
-                                    <span>Atras do shopping boa vista</span>
-                                </div>
-                                <div class="card-text">
-                                    <span>Telefone:</span>
-                                    <span>(00) 00000-0000</span>
-                                </div>
+                    </div> -->
+                    <div class="col-8">
+                        <div class="card" style="margin-bottom: 1rem;">
+                            <div class="card-header">
+                                Dados pessoais
                             </div>
-                            <div class="card-body">
-                                
-                                
-                            </div>
+                            <form action="">
+                                <div class="card-body cardPaddingBottom">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Nome</span>
+                                                </div>
+                                                <input type="text" value="Bruno Henrique" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">E-mail</span>
+                                                </div>
+                                                <input type="text" value="bhas@a.recife.ifpe.edu.br" readonly class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">D. Nascimento</span>
+                                                </div>
+                                                <input type="text" value="03/12/1989" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Telefone</span>
+                                                </div>
+                                                <input type="text" value="(81) 98765-4321" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-right">
+                                    <button type="submit" class="btn btn-info">Atualizar Dados</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-4">
-                        
-                        
+                    <div class="col-8">
+                        <div class="card" style="margin-bottom: 1rem;">
+                            <div class="card-header">
+                                Trocar Senha
+                            </div>
+                            <form action="">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Senha atual</span>
+                                                </div>
+                                                <input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">                                            
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Nova senha</span>
+                                                </div>
+                                                <input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">                                       
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Confirme a nova senha</span>
+                                                </div>
+                                                <input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-right">
+                                    <button type="submit" class="btn btn-info">Atualizar Senha</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="col-12">
-                        
+                    <div class="col-8">
+                        <div class="card" style="margin-bottom: 2rem;">
+                            <div class="card-header">
+                                Endereço de Entrega
+                            </div>
+                            <form action="">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">                                 
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">CEP</span>
+                                                </div>
+                                                <input type="text" placeholder="53130-110" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">                               
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Estado</span>
+                                                </div>
+                                                <select class="form-control">
+                                                    <option value="" selected>Pernambuco</option>
+                                                    <option value="">Bahia</option>
+                                                    <option value="">Rio de Janeiro</option>
+                                                    <option value="">São Paulo</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">                               
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Cidade</span>
+                                                </div>
+                                                <select class="form-control">
+                                                    <option value="" selected>Olinda</option>
+                                                    <option value="">Salvador</option>
+                                                    <option value="">Rio de Janeiro</option>
+                                                    <option value="">São Paulo</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">                               
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Logradouro</span>
+                                                </div>
+                                                <input type="text" placeholder="Rua Joaquim de Oliveira Valença" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-4">                               
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Número</span>
+                                                </div>
+                                                <input type="text" placeholder="172" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">                        
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Complemento</span>
+                                                </div>
+                                                <input type="text" placeholder="Apt 202" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">                        
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Ponto de Referência</span>
+                                                </div>
+                                                <input type="text" placeholder="Em frente ao bar Curva da Picanha" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-right">
+                                    <button type="submit" class="btn btn-info">Atualizar Endereço</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
